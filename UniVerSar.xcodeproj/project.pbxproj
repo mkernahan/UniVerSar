@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CBA4313170BB2F800703A37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA4312170BB2F800703A37 /* UIKit.framework */; };
+		4CBA4315170BB2F800703A37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA4314170BB2F800703A37 /* Foundation.framework */; };
+		4CBA4317170BB2F800703A37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA4316170BB2F800703A37 /* CoreGraphics.framework */; };
+		4CBA431D170BB2F800703A37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA431B170BB2F800703A37 /* InfoPlist.strings */; };
+		4CBA431F170BB2F800703A37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA431E170BB2F800703A37 /* main.m */; };
+		4CBA4323170BB2F800703A37 /* UVSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA4322170BB2F800703A37 /* UVSAppDelegate.m */; };
+		4CBA4325170BB2F800703A37 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA4324170BB2F800703A37 /* Default.png */; };
+		4CBA4327170BB2F800703A37 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA4326170BB2F800703A37 /* Default@2x.png */; };
+		4CBA4329170BB2F800703A37 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA4328170BB2F800703A37 /* Default-568h@2x.png */; };
+		4CBA432C170BB2F800703A37 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA432A170BB2F800703A37 /* MainStoryboard.storyboard */; };
+		4CBA432F170BB2F800703A37 /* UVSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA432E170BB2F800703A37 /* UVSViewController.m */; };
+		4CBA4337170BB2F800703A37 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA4336170BB2F800703A37 /* SenTestingKit.framework */; };
+		4CBA4338170BB2F800703A37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA4312170BB2F800703A37 /* UIKit.framework */; };
+		4CBA4339170BB2F800703A37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA4314170BB2F800703A37 /* Foundation.framework */; };
+		4CBA4341170BB2F800703A37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA433F170BB2F800703A37 /* InfoPlist.strings */; };
+		4CBA4344170BB2F800703A37 /* UniVerSarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA4343170BB2F800703A37 /* UniVerSarTests.m */; };
+		4CE23B10170BB6C40057A166 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE23B0F170BB6C40057A166 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CBA433A170BB2F800703A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CBA4307170BB2F800703A37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CBA430E170BB2F800703A37;
+			remoteInfo = UniVerSar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CBA430F170BB2F800703A37 /* UniVerSar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniVerSar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CBA4312170BB2F800703A37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CBA4314170BB2F800703A37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CBA4316170BB2F800703A37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CBA431A170BB2F800703A37 /* UniVerSar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UniVerSar-Info.plist"; sourceTree = "<group>"; };
+		4CBA431C170BB2F800703A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CBA431E170BB2F800703A37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CBA4320170BB2F800703A37 /* UniVerSar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UniVerSar-Prefix.pch"; sourceTree = "<group>"; };
+		4CBA4321170BB2F800703A37 /* UVSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSAppDelegate.h; sourceTree = "<group>"; };
+		4CBA4322170BB2F800703A37 /* UVSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSAppDelegate.m; sourceTree = "<group>"; };
+		4CBA4324170BB2F800703A37 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4CBA4326170BB2F800703A37 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4CBA4328170BB2F800703A37 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4CBA432B170BB2F800703A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4CBA432D170BB2F800703A37 /* UVSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSViewController.h; sourceTree = "<group>"; };
+		4CBA432E170BB2F800703A37 /* UVSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UVSViewController.m; sourceTree = "<group>"; };
+		4CBA4335170BB2F800703A37 /* UniVerSarTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniVerSarTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CBA4336170BB2F800703A37 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4CBA433E170BB2F800703A37 /* UniVerSarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UniVerSarTests-Info.plist"; sourceTree = "<group>"; };
+		4CBA4340170BB2F800703A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CBA4342170BB2F800703A37 /* UniVerSarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniVerSarTests.h; sourceTree = "<group>"; };
+		4CBA4343170BB2F800703A37 /* UniVerSarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniVerSarTests.m; sourceTree = "<group>"; };
+		4CE23B0F170BB6C40057A166 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CBA430C170BB2F800703A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE23B10170BB6C40057A166 /* MapKit.framework in Frameworks */,
+				4CBA4313170BB2F800703A37 /* UIKit.framework in Frameworks */,
+				4CBA4315170BB2F800703A37 /* Foundation.framework in Frameworks */,
+				4CBA4317170BB2F800703A37 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CBA4331170BB2F800703A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBA4337170BB2F800703A37 /* SenTestingKit.framework in Frameworks */,
+				4CBA4338170BB2F800703A37 /* UIKit.framework in Frameworks */,
+				4CBA4339170BB2F800703A37 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CBA4306170BB2F800703A37 = {
+			isa = PBXGroup;
+			children = (
+				4CE23B0F170BB6C40057A166 /* MapKit.framework */,
+				4CBA4318170BB2F800703A37 /* UniVerSar */,
+				4CBA433C170BB2F800703A37 /* UniVerSarTests */,
+				4CBA4311170BB2F800703A37 /* Frameworks */,
+				4CBA4310170BB2F800703A37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CBA4310170BB2F800703A37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA430F170BB2F800703A37 /* UniVerSar.app */,
+				4CBA4335170BB2F800703A37 /* UniVerSarTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CBA4311170BB2F800703A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA4312170BB2F800703A37 /* UIKit.framework */,
+				4CBA4314170BB2F800703A37 /* Foundation.framework */,
+				4CBA4316170BB2F800703A37 /* CoreGraphics.framework */,
+				4CBA4336170BB2F800703A37 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CBA4318170BB2F800703A37 /* UniVerSar */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA4321170BB2F800703A37 /* UVSAppDelegate.h */,
+				4CBA4322170BB2F800703A37 /* UVSAppDelegate.m */,
+				4CBA432A170BB2F800703A37 /* MainStoryboard.storyboard */,
+				4CBA432D170BB2F800703A37 /* UVSViewController.h */,
+				4CBA432E170BB2F800703A37 /* UVSViewController.m */,
+				4CBA4319170BB2F800703A37 /* Supporting Files */,
+			);
+			path = UniVerSar;
+			sourceTree = "<group>";
+		};
+		4CBA4319170BB2F800703A37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA431A170BB2F800703A37 /* UniVerSar-Info.plist */,
+				4CBA431B170BB2F800703A37 /* InfoPlist.strings */,
+				4CBA431E170BB2F800703A37 /* main.m */,
+				4CBA4320170BB2F800703A37 /* UniVerSar-Prefix.pch */,
+				4CBA4324170BB2F800703A37 /* Default.png */,
+				4CBA4326170BB2F800703A37 /* Default@2x.png */,
+				4CBA4328170BB2F800703A37 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CBA433C170BB2F800703A37 /* UniVerSarTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA4342170BB2F800703A37 /* UniVerSarTests.h */,
+				4CBA4343170BB2F800703A37 /* UniVerSarTests.m */,
+				4CBA433D170BB2F800703A37 /* Supporting Files */,
+			);
+			path = UniVerSarTests;
+			sourceTree = "<group>";
+		};
+		4CBA433D170BB2F800703A37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA433E170BB2F800703A37 /* UniVerSarTests-Info.plist */,
+				4CBA433F170BB2F800703A37 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CBA430E170BB2F800703A37 /* UniVerSar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBA4347170BB2F800703A37 /* Build configuration list for PBXNativeTarget "UniVerSar" */;
+			buildPhases = (
+				4CBA430B170BB2F800703A37 /* Sources */,
+				4CBA430C170BB2F800703A37 /* Frameworks */,
+				4CBA430D170BB2F800703A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniVerSar;
+			productName = UniVerSar;
+			productReference = 4CBA430F170BB2F800703A37 /* UniVerSar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CBA4334170BB2F800703A37 /* UniVerSarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBA434A170BB2F800703A37 /* Build configuration list for PBXNativeTarget "UniVerSarTests" */;
+			buildPhases = (
+				4CBA4330170BB2F800703A37 /* Sources */,
+				4CBA4331170BB2F800703A37 /* Frameworks */,
+				4CBA4332170BB2F800703A37 /* Resources */,
+				4CBA4333170BB2F800703A37 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CBA433B170BB2F800703A37 /* PBXTargetDependency */,
+			);
+			name = UniVerSarTests;
+			productName = UniVerSarTests;
+			productReference = 4CBA4335170BB2F800703A37 /* UniVerSarTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CBA4307170BB2F800703A37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UVS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = redshirtlabs;
+			};
+			buildConfigurationList = 4CBA430A170BB2F800703A37 /* Build configuration list for PBXProject "UniVerSar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CBA4306170BB2F800703A37;
+			productRefGroup = 4CBA4310170BB2F800703A37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CBA430E170BB2F800703A37 /* UniVerSar */,
+				4CBA4334170BB2F800703A37 /* UniVerSarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CBA430D170BB2F800703A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBA431D170BB2F800703A37 /* InfoPlist.strings in Resources */,
+				4CBA4325170BB2F800703A37 /* Default.png in Resources */,
+				4CBA4327170BB2F800703A37 /* Default@2x.png in Resources */,
+				4CBA4329170BB2F800703A37 /* Default-568h@2x.png in Resources */,
+				4CBA432C170BB2F800703A37 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CBA4332170BB2F800703A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBA4341170BB2F800703A37 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CBA4333170BB2F800703A37 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CBA430B170BB2F800703A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBA431F170BB2F800703A37 /* main.m in Sources */,
+				4CBA4323170BB2F800703A37 /* UVSAppDelegate.m in Sources */,
+				4CBA432F170BB2F800703A37 /* UVSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CBA4330170BB2F800703A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBA4344170BB2F800703A37 /* UniVerSarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CBA433B170BB2F800703A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CBA430E170BB2F800703A37 /* UniVerSar */;
+			targetProxy = 4CBA433A170BB2F800703A37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CBA431B170BB2F800703A37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CBA431C170BB2F800703A37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CBA432A170BB2F800703A37 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CBA432B170BB2F800703A37 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		4CBA433F170BB2F800703A37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CBA4340170BB2F800703A37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CBA4345170BB2F800703A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4CBA4346170BB2F800703A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CBA4348170BB2F800703A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UniVerSar/UniVerSar-Prefix.pch";
+				INFOPLIST_FILE = "UniVerSar/UniVerSar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CBA4349170BB2F800703A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UniVerSar/UniVerSar-Prefix.pch";
+				INFOPLIST_FILE = "UniVerSar/UniVerSar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CBA434B170BB2F800703A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UniVerSar.app/UniVerSar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UniVerSar/UniVerSar-Prefix.pch";
+				INFOPLIST_FILE = "UniVerSarTests/UniVerSarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4CBA434C170BB2F800703A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UniVerSar.app/UniVerSar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UniVerSar/UniVerSar-Prefix.pch";
+				INFOPLIST_FILE = "UniVerSarTests/UniVerSarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CBA430A170BB2F800703A37 /* Build configuration list for PBXProject "UniVerSar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBA4345170BB2F800703A37 /* Debug */,
+				4CBA4346170BB2F800703A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CBA4347170BB2F800703A37 /* Build configuration list for PBXNativeTarget "UniVerSar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBA4348170BB2F800703A37 /* Debug */,
+				4CBA4349170BB2F800703A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CBA434A170BB2F800703A37 /* Build configuration list for PBXNativeTarget "UniVerSarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBA434B170BB2F800703A37 /* Debug */,
+				4CBA434C170BB2F800703A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CBA4307170BB2F800703A37 /* Project object */;
+}
