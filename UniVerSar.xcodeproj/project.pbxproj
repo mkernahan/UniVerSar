@@ -24,6 +24,10 @@
 		4CBA4341170BB2F800703A37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA433F170BB2F800703A37 /* InfoPlist.strings */; };
 		4CBA4344170BB2F800703A37 /* UniVerSarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA4343170BB2F800703A37 /* UniVerSarTests.m */; };
 		4CE23B10170BB6C40057A166 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE23B0F170BB6C40057A166 /* MapKit.framework */; };
+		4CE23B15170BB77C0057A166 /* UVSMainMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE23B14170BB77C0057A166 /* UVSMainMapViewController.m */; };
+		4CE23B17170BBB320057A166 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE23B16170BBB320057A166 /* CoreLocation.framework */; };
+		4CE23B19170BC2F60057A166 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE23B18170BC2F60057A166 /* CoreData.framework */; };
+		4CE23B1D170BC3620057A166 /* UniVerSar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CE23B1B170BC3620057A166 /* UniVerSar.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,11 @@
 		4CBA4342170BB2F800703A37 /* UniVerSarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniVerSarTests.h; sourceTree = "<group>"; };
 		4CBA4343170BB2F800703A37 /* UniVerSarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniVerSarTests.m; sourceTree = "<group>"; };
 		4CE23B0F170BB6C40057A166 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4CE23B13170BB77C0057A166 /* UVSMainMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UVSMainMapViewController.h; path = ViewControllers/UVSMainMapViewController.h; sourceTree = "<group>"; };
+		4CE23B14170BB77C0057A166 /* UVSMainMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UVSMainMapViewController.m; path = ViewControllers/UVSMainMapViewController.m; sourceTree = "<group>"; };
+		4CE23B16170BBB320057A166 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4CE23B18170BC2F60057A166 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4CE23B1C170BC3620057A166 /* UniVerSar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UniVerSar.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE23B19170BC2F60057A166 /* CoreData.framework in Frameworks */,
+				4CE23B17170BBB320057A166 /* CoreLocation.framework in Frameworks */,
 				4CE23B10170BB6C40057A166 /* MapKit.framework in Frameworks */,
 				4CBA4313170BB2F800703A37 /* UIKit.framework in Frameworks */,
 				4CBA4315170BB2F800703A37 /* Foundation.framework in Frameworks */,
@@ -90,7 +101,6 @@
 		4CBA4306170BB2F800703A37 = {
 			isa = PBXGroup;
 			children = (
-				4CE23B0F170BB6C40057A166 /* MapKit.framework */,
 				4CBA4318170BB2F800703A37 /* UniVerSar */,
 				4CBA433C170BB2F800703A37 /* UniVerSarTests */,
 				4CBA4311170BB2F800703A37 /* Frameworks */,
@@ -110,10 +120,13 @@
 		4CBA4311170BB2F800703A37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CE23B18170BC2F60057A166 /* CoreData.framework */,
 				4CBA4312170BB2F800703A37 /* UIKit.framework */,
 				4CBA4314170BB2F800703A37 /* Foundation.framework */,
 				4CBA4316170BB2F800703A37 /* CoreGraphics.framework */,
 				4CBA4336170BB2F800703A37 /* SenTestingKit.framework */,
+				4CE23B16170BBB320057A166 /* CoreLocation.framework */,
+				4CE23B0F170BB6C40057A166 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,11 +134,11 @@
 		4CBA4318170BB2F800703A37 /* UniVerSar */ = {
 			isa = PBXGroup;
 			children = (
+				4CE23B1A170BC3190057A166 /* CoreData */,
+				4CE23B11170BB72C0057A166 /* View Controllers */,
 				4CBA4321170BB2F800703A37 /* UVSAppDelegate.h */,
 				4CBA4322170BB2F800703A37 /* UVSAppDelegate.m */,
 				4CBA432A170BB2F800703A37 /* MainStoryboard.storyboard */,
-				4CBA432D170BB2F800703A37 /* UVSViewController.h */,
-				4CBA432E170BB2F800703A37 /* UVSViewController.m */,
 				4CBA4319170BB2F800703A37 /* Supporting Files */,
 			);
 			path = UniVerSar;
@@ -162,6 +175,33 @@
 				4CBA433F170BB2F800703A37 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CE23B11170BB72C0057A166 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CE23B12170BB73D0057A166 /* Main Map */,
+				4CBA432D170BB2F800703A37 /* UVSViewController.h */,
+				4CBA432E170BB2F800703A37 /* UVSViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4CE23B12170BB73D0057A166 /* Main Map */ = {
+			isa = PBXGroup;
+			children = (
+				4CE23B13170BB77C0057A166 /* UVSMainMapViewController.h */,
+				4CE23B14170BB77C0057A166 /* UVSMainMapViewController.m */,
+			);
+			name = "Main Map";
+			sourceTree = "<group>";
+		};
+		4CE23B1A170BC3190057A166 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4CE23B1B170BC3620057A166 /* UniVerSar.xcdatamodeld */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +318,8 @@
 				4CBA431F170BB2F800703A37 /* main.m in Sources */,
 				4CBA4323170BB2F800703A37 /* UVSAppDelegate.m in Sources */,
 				4CBA432F170BB2F800703A37 /* UVSViewController.m in Sources */,
+				4CE23B15170BB77C0057A166 /* UVSMainMapViewController.m in Sources */,
+				4CE23B1D170BC3620057A166 /* UniVerSar.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +514,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CE23B1B170BC3620057A166 /* UniVerSar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CE23B1C170BC3620057A166 /* UniVerSar.xcdatamodel */,
+			);
+			currentVersion = 4CE23B1C170BC3620057A166 /* UniVerSar.xcdatamodel */;
+			name = UniVerSar.xcdatamodeld;
+			path = CoreData/UniVerSar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4CBA4307170BB2F800703A37 /* Project object */;
 }

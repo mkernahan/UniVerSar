@@ -12,7 +12,9 @@
 
 @end
 
-@implementation UVSViewController
+@implementation UVSViewController {
+    
+}
 
 - (void)viewDidLoad
 {
