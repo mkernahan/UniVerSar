@@ -8,6 +8,7 @@
 
 #import "UVSMainMapViewController.h"
 #import <MapKit/MapKit.h>
+#import "UVSAppDelegate.h"
 
 @interface UVSMainMapViewController () < MKMapViewDelegate >
 
@@ -32,6 +33,11 @@
     coords[3] = CLLocationCoordinate2DMake(-90.0, -180.0);
     [_mainMapView addOverlay:[MKPolygon polygonWithCoordinates:coords count:4]];
     free(coords);
+    
+    UVSAppDelegate *uvsAD = (UVSAppDelegate *)[UIApplication sharedApplication].delegate;
+    NSArray *sss = [uvsAD getAllSolarSystems];
+    
+    [_mainMapView addAnnotations:sss];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,8 +82,15 @@
     if ([mapAnnotation isKindOfClass:[MKUserLocation class]]) {
         return nil;
     }
-    // try to dequeue an existing pin view first
-    return nil;
+    // try to dequeue an existing pin view first    
+    NSString *ssId = @"SolarSystem";
+    MKPinAnnotationView *av = (MKPinAnnotationView *)[mv dequeueReusableAnnotationViewWithIdentifier:ssId];
+    if (!av) {
+        av = [[MKPinAnnotationView alloc] initWithAnnotation:mapAnnotation reuseIdentifier:ssId];
+        av.pinColor = MKPinAnnotationColorRed;
+        av.canShowCallout = YES;
+    }
+    return av;
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)annotationView {
