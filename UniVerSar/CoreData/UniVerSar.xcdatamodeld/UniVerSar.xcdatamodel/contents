@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="SolarSystem" syncable="YES">
-        <attribute name="fuelIdiumCurrent" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="fuelIdiumStart" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+    <entity name="Planet" representedClassName="UVSPlanet" syncable="YES">
+        <relationship name="solarSystem" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="SolarSystem" inverseName="planets" inverseEntity="SolarSystem" syncable="YES"/>
+    </entity>
+    <entity name="SolarSystem" representedClassName="UVSSolarSystem" parentEntity="SpaceObject" syncable="YES">
+        <relationship name="planets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Planet" inverseName="solarSystem" inverseEntity="Planet" syncable="YES"/>
+        <relationship name="stars" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Star" inverseName="solarSystem" inverseEntity="Star" syncable="YES"/>
+    </entity>
+    <entity name="SpaceObject" representedClassName="UVSSpaceObject" isAbstract="YES" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Star" representedClassName="UVSStar" syncable="YES">
+        <relationship name="solarSystem" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="SolarSystem" inverseName="stars" inverseEntity="SolarSystem" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="SolarSystem" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="SolarSystem" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Star" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Planet" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="SpaceObject" positionX="160" positionY="192" width="128" height="105"/>
     </elements>
 </model>
