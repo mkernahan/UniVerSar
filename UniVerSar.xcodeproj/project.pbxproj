@@ -28,6 +28,10 @@
 		4CE23B17170BBB320057A166 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE23B16170BBB320057A166 /* CoreLocation.framework */; };
 		4CE23B19170BC2F60057A166 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE23B18170BC2F60057A166 /* CoreData.framework */; };
 		4CE23B1D170BC3620057A166 /* UniVerSar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CE23B1B170BC3620057A166 /* UniVerSar.xcdatamodeld */; };
+		4CE3D4DC1714E7EA00631322 /* UVSSolarSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE3D4DB1714E7EA00631322 /* UVSSolarSystem.m */; };
+		4CE3D4DF1714E80200631322 /* UVSSpaceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE3D4DE1714E80200631322 /* UVSSpaceObject.m */; };
+		4CE3D4E21714E82600631322 /* UVSStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE3D4E11714E82600631322 /* UVSStar.m */; };
+		4CE3D4E51714E83700631322 /* UVSPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE3D4E41714E83700631322 /* UVSPlanet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,14 @@
 		4CE23B16170BBB320057A166 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4CE23B18170BC2F60057A166 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4CE23B1C170BC3620057A166 /* UniVerSar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UniVerSar.xcdatamodel; sourceTree = "<group>"; };
+		4CE3D4DA1714E7EA00631322 /* UVSSolarSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UVSSolarSystem.h; path = CoreData/UVSSolarSystem.h; sourceTree = "<group>"; };
+		4CE3D4DB1714E7EA00631322 /* UVSSolarSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UVSSolarSystem.m; path = CoreData/UVSSolarSystem.m; sourceTree = "<group>"; };
+		4CE3D4DD1714E80200631322 /* UVSSpaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UVSSpaceObject.h; path = CoreData/UVSSpaceObject.h; sourceTree = "<group>"; };
+		4CE3D4DE1714E80200631322 /* UVSSpaceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UVSSpaceObject.m; path = CoreData/UVSSpaceObject.m; sourceTree = "<group>"; };
+		4CE3D4E01714E82600631322 /* UVSStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UVSStar.h; path = CoreData/UVSStar.h; sourceTree = "<group>"; };
+		4CE3D4E11714E82600631322 /* UVSStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UVSStar.m; path = CoreData/UVSStar.m; sourceTree = "<group>"; };
+		4CE3D4E31714E83700631322 /* UVSPlanet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UVSPlanet.h; path = CoreData/UVSPlanet.h; sourceTree = "<group>"; };
+		4CE3D4E41714E83700631322 /* UVSPlanet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UVSPlanet.m; path = CoreData/UVSPlanet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +212,14 @@
 			isa = PBXGroup;
 			children = (
 				4CE23B1B170BC3620057A166 /* UniVerSar.xcdatamodeld */,
+				4CE3D4DD1714E80200631322 /* UVSSpaceObject.h */,
+				4CE3D4DE1714E80200631322 /* UVSSpaceObject.m */,
+				4CE3D4DA1714E7EA00631322 /* UVSSolarSystem.h */,
+				4CE3D4DB1714E7EA00631322 /* UVSSolarSystem.m */,
+				4CE3D4E01714E82600631322 /* UVSStar.h */,
+				4CE3D4E11714E82600631322 /* UVSStar.m */,
+				4CE3D4E31714E83700631322 /* UVSPlanet.h */,
+				4CE3D4E41714E83700631322 /* UVSPlanet.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -320,6 +340,10 @@
 				4CBA432F170BB2F800703A37 /* UVSViewController.m in Sources */,
 				4CE23B15170BB77C0057A166 /* UVSMainMapViewController.m in Sources */,
 				4CE23B1D170BC3620057A166 /* UniVerSar.xcdatamodeld in Sources */,
+				4CE3D4DC1714E7EA00631322 /* UVSSolarSystem.m in Sources */,
+				4CE3D4DF1714E80200631322 /* UVSSpaceObject.m in Sources */,
+				4CE3D4E21714E82600631322 /* UVSStar.m in Sources */,
+				4CE3D4E51714E83700631322 /* UVSPlanet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
