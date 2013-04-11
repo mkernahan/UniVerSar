@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C76EFDB17163FC70051143E /* UVSSelectedPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C76EFDA17163FC70051143E /* UVSSelectedPinView.xib */; };
+		4C76EFDE1716401B0051143E /* UVSSelectedPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C76EFDD1716401A0051143E /* UVSSelectedPinView.m */; };
+		4C76EFE0171641E20051143E /* UVSSelectedPinViewSpacer.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C76EFDF171641E10051143E /* UVSSelectedPinViewSpacer.png */; };
 		4CBA4313170BB2F800703A37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA4312170BB2F800703A37 /* UIKit.framework */; };
 		4CBA4315170BB2F800703A37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA4314170BB2F800703A37 /* Foundation.framework */; };
 		4CBA4317170BB2F800703A37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA4316170BB2F800703A37 /* CoreGraphics.framework */; };
@@ -45,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C76EFDA17163FC70051143E /* UVSSelectedPinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UVSSelectedPinView.xib; path = ViewControllers/UVSSelectedPinView.xib; sourceTree = "<group>"; };
+		4C76EFDC1716401A0051143E /* UVSSelectedPinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UVSSelectedPinView.h; path = ViewControllers/UVSSelectedPinView.h; sourceTree = "<group>"; };
+		4C76EFDD1716401A0051143E /* UVSSelectedPinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UVSSelectedPinView.m; path = ViewControllers/UVSSelectedPinView.m; sourceTree = "<group>"; };
+		4C76EFDF171641E10051143E /* UVSSelectedPinViewSpacer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UVSSelectedPinViewSpacer.png; path = Resources/UVSSelectedPinViewSpacer.png; sourceTree = "<group>"; };
 		4CBA430F170BB2F800703A37 /* UniVerSar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniVerSar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBA4312170BB2F800703A37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4CBA4314170BB2F800703A37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -202,8 +209,12 @@
 		4CE23B12170BB73D0057A166 /* Main Map */ = {
 			isa = PBXGroup;
 			children = (
+				4C76EFDF171641E10051143E /* UVSSelectedPinViewSpacer.png */,
 				4CE23B13170BB77C0057A166 /* UVSMainMapViewController.h */,
 				4CE23B14170BB77C0057A166 /* UVSMainMapViewController.m */,
+				4C76EFDA17163FC70051143E /* UVSSelectedPinView.xib */,
+				4C76EFDC1716401A0051143E /* UVSSelectedPinView.h */,
+				4C76EFDD1716401A0051143E /* UVSSelectedPinView.m */,
 			);
 			name = "Main Map";
 			sourceTree = "<group>";
@@ -301,6 +312,8 @@
 				4CBA4327170BB2F800703A37 /* Default@2x.png in Resources */,
 				4CBA4329170BB2F800703A37 /* Default-568h@2x.png in Resources */,
 				4CBA432C170BB2F800703A37 /* MainStoryboard.storyboard in Resources */,
+				4C76EFDB17163FC70051143E /* UVSSelectedPinView.xib in Resources */,
+				4C76EFE0171641E20051143E /* UVSSelectedPinViewSpacer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +357,7 @@
 				4CE3D4DF1714E80200631322 /* UVSSpaceObject.m in Sources */,
 				4CE3D4E21714E82600631322 /* UVSStar.m in Sources */,
 				4CE3D4E51714E83700631322 /* UVSPlanet.m in Sources */,
+				4C76EFDE1716401B0051143E /* UVSSelectedPinView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

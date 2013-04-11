@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "UVSAppDelegate.h"
 #import "UVSSolarSystem.h"
+#import "UVSSelectedPinView.h"
 
 @interface UVSSelectedCalloutAnnotation : NSObject < MKAnnotation >
 - (void) setCoordinate:(CLLocationCoordinate2D)newCoordinate;
@@ -111,12 +112,12 @@
     }
     if ([mapAnnotation isKindOfClass:[UVSSelectedCalloutAnnotation class]]) {
         NSString *ssId = @"SelectedCalloutAnnotation";
-        MKPinAnnotationView *av = (MKPinAnnotationView *)[mv dequeueReusableAnnotationViewWithIdentifier:ssId];
+        UVSSelectedPinView *av = (UVSSelectedPinView *)[mv dequeueReusableAnnotationViewWithIdentifier:ssId];
         if (!av) {
-            av = [[MKPinAnnotationView alloc] initWithAnnotation:mapAnnotation reuseIdentifier:ssId];
+            av = [[UVSSelectedPinView alloc] initWithAnnotation:mapAnnotation reuseIdentifier:ssId];
+            av.image = [UIImage imageNamed:@"UVSSelectedPinViewSpacer"];
             av.canShowCallout = NO;
         }
-        av.pinColor = MKPinAnnotationColorGreen;
         return av;
     }
     return nil;
