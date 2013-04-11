@@ -9,6 +9,21 @@
 #import "UVSMainMapViewController.h"
 #import <MapKit/MapKit.h>
 #import "UVSAppDelegate.h"
+#import "UVSSolarSystem.h"
+
+@interface UVSSelectedCalloutAnnotation : NSObject < MKAnnotation >
+- (void) setCoordinate:(CLLocationCoordinate2D)newCoordinate;
+@end
+
+@implementation UVSSelectedCalloutAnnotation {
+    CLLocationCoordinate2D _coord;
+}
+- (CLLocationCoordinate2D) coordinate { return _coord; }
+- (void) setCoordinate:(CLLocationCoordinate2D)newCoordinate {
+    _coord = newCoordinate;
+}
+
+@end
 
 @interface UVSMainMapViewController () < MKMapViewDelegate >
 
@@ -17,6 +32,7 @@
 @implementation UVSMainMapViewController {
     
     __weak IBOutlet MKMapView *_mainMapView;
+    UVSSelectedCalloutAnnotation *_selectedAnnotationCustomThingy;
 }
 
 - (void)viewDidLoad
@@ -82,19 +98,48 @@
     if ([mapAnnotation isKindOfClass:[MKUserLocation class]]) {
         return nil;
     }
-    // try to dequeue an existing pin view first    
-    NSString *ssId = @"SolarSystem";
-    MKPinAnnotationView *av = (MKPinAnnotationView *)[mv dequeueReusableAnnotationViewWithIdentifier:ssId];
-    if (!av) {
-        av = [[MKPinAnnotationView alloc] initWithAnnotation:mapAnnotation reuseIdentifier:ssId];
-        av.pinColor = MKPinAnnotationColorRed;
-        av.canShowCallout = YES;
+    // try to dequeue an existing pin view first
+    if ([mapAnnotation isKindOfClass:[UVSSolarSystem class]]) {
+        NSString *ssId = @"SolarSystem";
+        MKPinAnnotationView *av = (MKPinAnnotationView *)[mv dequeueReusableAnnotationViewWithIdentifier:ssId];
+        if (!av) {
+            av = [[MKPinAnnotationView alloc] initWithAnnotation:mapAnnotation reuseIdentifier:ssId];
+            av.canShowCallout = NO;
+            av.pinColor = MKPinAnnotationColorRed;
+        }
+        return av;
     }
-    return av;
+    if ([mapAnnotation isKindOfClass:[UVSSelectedCalloutAnnotation class]]) {
+        NSString *ssId = @"SelectedCalloutAnnotation";
+        MKPinAnnotationView *av = (MKPinAnnotationView *)[mv dequeueReusableAnnotationViewWithIdentifier:ssId];
+        if (!av) {
+            av = [[MKPinAnnotationView alloc] initWithAnnotation:mapAnnotation reuseIdentifier:ssId];
+            av.canShowCallout = NO;
+        }
+        av.pinColor = MKPinAnnotationColorGreen;
+        return av;
+    }
+    return nil;
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)annotationView {
+    if (!_selectedAnnotationCustomThingy) {
+        _selectedAnnotationCustomThingy = [[UVSSelectedCalloutAnnotation alloc] init];
+    }
+    [_selectedAnnotationCustomThingy setCoordinate:annotationView.annotation.coordinate];
+    if (![mapView.annotations containsObject:_selectedAnnotationCustomThingy]) {
+        [mapView addAnnotations:@[_selectedAnnotationCustomThingy]];
+    }
+    annotationView.hidden = YES;
+}
 
+- (void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)annotationView {
+    annotationView.hidden = NO;
+    if (mapView.selectedAnnotations.count == 0 && _selectedAnnotationCustomThingy) {
+        [mapView removeAnnotation:_selectedAnnotationCustomThingy];
+        _selectedAnnotationCustomThingy = nil;
+    }
 }
 
 @end
+
